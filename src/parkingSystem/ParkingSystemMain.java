@@ -59,7 +59,20 @@ public class ParkingSystemMain {
 					 * isParked = parkingSystem.addCar(4); System.out.println("Car 5 parked: " +
 					 * isParked);
 					 */} else {
-					System.out.println("Solution 2 coming soon...");
+						 if(solutionType==2){
+							 System.out.println("Processing via solution 2");
+							 
+							 boolean isParked = parkingSystem.addCar2(parkAtSmallSpace);
+							 System.out.println("Car 1 is parked: " + isParked);
+							 
+							 isParked = parkingSystem.addCar2(parkAtMedSpace);
+							 System.out.println("Car 2 is parked: " + isParked);
+							 
+							 isParked = parkingSystem.addCar2(parkAtLargeSpace);
+							 System.out.println("Car3 is parked: " + isParked);
+							 
+							 } else{System.out.println("Solution 2 coming soon...");
+						 }
 				}
 			} else {
 				System.out.println("You must choose a solution type 1 or 2.");
